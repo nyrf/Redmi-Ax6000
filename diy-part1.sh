@@ -55,3 +55,7 @@ sed -i '$a src-git small https://github.com/kenzok8/small-package' feeds.conf.de
 #svn export https://github.com/immortalwrt/packages/branches/openwrt-21.02/net/vlmcsd  package/vlmcsd
 #sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./package/*/Makefile
 #./scripts/feeds update -i && ./scripts/feeds install -a
+
+
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
